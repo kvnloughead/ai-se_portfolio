@@ -1,0 +1,58 @@
+/* Card is well over 80px tall -> 16px radius per the border-radius scale */
+.project-card {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-elevated);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-image {
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.project-card-name {
+  font-size: 20px;
+}
+
+.project-card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-secondary);
+  flex: 1;
+}
+
+.project-card-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.project-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+}
+
+.project-card-link:hover {
+  color: var(--color-blue);
+}

@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntl-Regular-WebM.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntl-SemiBold-WebM.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse Intl Mono";
+  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntlMono-Regular-WebS.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: rgb(0 0 0 / 0.5);
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f2f1ee;
+  --color-border: rgb(0 0 0 / 0.14);
+  --color-blue: #1878dc;
+  --color-orange: #d35722;
+  --color-green: #328f51;
+  --color-red: #de4c45;
+  --color-yellow: #f48e00;
+  --color-purple: #8754fd;
+
+  /* Typography */
+  --font-body: "Suisse Intl", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Suisse Intl Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-size-main: 18px;
+  --font-size-secondary: 16px;
+  --font-size-caption: 14px;
+
+  /* Shadow */
+  --shadow-elevated: 0 0 0.5px 0 rgb(0 0 0 / 0.3), 0 1px 3px 0 rgb(0 0 0 / 0.15);
+
+  /* Layout */
+  --content-max-width: 1080px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-blue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+}
+
+.section {
+  padding: 64px 24px;
+}
+
+.section-inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin: 0 0 32px;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 16px;
+  }
+}
+
+/* Buttons: ~48px tall -> 12px radius per the border-radius scale */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: var(--font-size-secondary);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: var(--color-blue);
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background-color: #1666bd;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.button-secondary:hover {
+  background-color: var(--color-bg-secondary);
+}
