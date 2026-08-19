@@ -59,12 +59,11 @@
 
 .contact__link_resume {
   color: var(--color-blue);
-  text-decoration: underline;
   font-weight: 600;
 }
 
 .contact__link:hover {
-  background-color: var(--color-bg-secondary);
+  text-decoration: underline;
 }
 
 .contact__social-list {
@@ -86,6 +85,10 @@
   align-items: center;
   justify-content: center;
   border: 1px solid #808080;
+}
+
+.contact__social:hover {
+  background: var(--color-hover-primary);
 }
 
 .contact__social::before {

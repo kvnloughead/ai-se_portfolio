@@ -25,7 +25,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="project-card__link"
+            className="project-card__link project-card__link_github"
           >
             Code
           </a>
@@ -33,7 +33,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.liveUrl}
             target="_blank"
             rel="noreferrer"
-            className="project-card__link"
+            className="project-card__link project-card__link_live-site"
           >
             Live
           </a>

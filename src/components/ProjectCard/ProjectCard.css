@@ -58,5 +58,20 @@
 }
 
 .project-card__link:hover {
-  color: var(--color-blue);
+  background-color: var(--color-hover-primary);
+}
+
+.project-card__link::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.project-card__link_github::before {
+  background-image: url(../../assets/icons/github.png);
+}
+
+.project-card__link_live-site::before {
+  background-image: url(../../assets/icons/livesite.png);
 }

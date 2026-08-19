@@ -22,6 +22,10 @@
   font-weight: 400;
 }
 
+.navbar__brand:hover {
+  color: var(--color-blue);
+}
+
 .navbar__links {
   display: flex;
   gap: 32px;
@@ -34,7 +38,7 @@
 }
 
 .navbar__links a:hover {
-  color: var(--color-blue);
+  font-weight: 500;
 }
 
 .navbar__toggle {

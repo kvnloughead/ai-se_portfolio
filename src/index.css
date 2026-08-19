@@ -13,6 +13,8 @@
   --color-text-secondary: #808080;
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #c5e0fc;
+  --color-hover-primary: #bfdbfe;
+  --color-hover-secondary: #c5e0fc;
   --color-blue: #3f96f3;
 
   --color-orange: #d35722;
@@ -129,6 +131,11 @@ pre {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: var(--color-hover-secondary);
+  border: none;
+}
+
 .button_primary {
   background-color: var(--color-blue);
   color: #ffffff;
@@ -136,15 +143,11 @@ pre {
 }
 
 .button_primary:hover {
-  background-color: #1666bd;
+  color: var(--color-text-primary);
 }
 
 .button_secondary {
   background-color: transparent;
   color: #212121;
   border-color: var(--color-blue);
-}
-
-.button_secondary:hover {
-  background-color: var(--color-bg-secondary);
 }
