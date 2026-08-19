@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { profile } from "../../data/profile";
+import Contact from "../Contact/Contact";
 import "./Navbar.css";
 
 const links = [
-  { href: "#about", label: "About" },
+  { href: "#home", label: "Home" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
@@ -14,10 +15,10 @@ export function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="navbar__inner">
+      <div className={`navbar__inner ${isOpen ? "navbar__inner_open" : ""}`}>
         <a
           className="navbar__brand"
-          href="#about"
+          href="#home"
           onClick={() => setIsOpen(false)}
         >
           {profile.name}
@@ -25,16 +26,12 @@ export function Navbar() {
 
         <button
           type="button"
-          className="navbar__toggle"
+          className={`navbar__toggle ${isOpen ? "navbar__toggle_close" : ""}`}
           aria-expanded={isOpen}
           aria-controls="navbar__links"
           aria-label="Toggle navigation menu"
           onClick={() => setIsOpen((open) => !open)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+        ></button>
 
         <nav
           id="navbar__links"
@@ -42,6 +39,7 @@ export function Navbar() {
         >
           {links.map((link) => (
             <a
+              className="navbar__link"
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
@@ -49,6 +47,11 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
+          {isOpen && (
+            <div className="navbar__contacts">
+              <Contact />
+            </div>
+          )}
         </nav>
       </div>
     </header>

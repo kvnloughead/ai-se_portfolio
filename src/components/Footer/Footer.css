@@ -1,0 +1,25 @@
+.footer {
+  margin-bottom: 80px;
+}
+
+.footer__inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 36px;
+}
+
+.footer__blurb {
+  max-width: 500px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-secondary);
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__blurb {
+    font-size: var(--font-size-sm);
+  }
+}

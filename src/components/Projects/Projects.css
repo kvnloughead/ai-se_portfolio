@@ -16,3 +16,17 @@
   bottom: 29px;
   left: calc(50% - 70px);
 }
+
+@media screen and (max-width: 1200px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, minmax(214px, 1fr));
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .projects__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

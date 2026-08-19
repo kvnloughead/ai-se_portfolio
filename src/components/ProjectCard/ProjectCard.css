@@ -75,3 +75,18 @@
 .project-card__link_live-site::before {
   background-image: url(../../assets/icons/livesite.png);
 }
+
+@media screen and (max-width: 480px) {
+  .project-card__body {
+    padding: 20px;
+  }
+
+  .project-card__name {
+    font-size: var(--font-size-lg);
+  }
+
+  .project-card__description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}

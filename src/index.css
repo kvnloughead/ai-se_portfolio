@@ -89,6 +89,10 @@ pre {
   font-family: var(--font-mono);
 }
 
+button {
+  cursor: pointer;
+}
+
 .section {
   padding: 0 24px;
 }
@@ -106,13 +110,22 @@ pre {
   margin: 0 0 40px;
 }
 
-.section__title_contacts {
+.section__title_footer {
   margin: 0 0 12px;
 }
 
 @media (max-width: 480px) {
-  .section {
-    padding: 48px 16px;
+  .section__inner {
+    padding: 64px 0;
+  }
+
+  .section__title {
+    margin-bottom: 28px;
+    font-size: 32px;
+  }
+
+  .section__title_footer {
+    margin-bottom: 0;
   }
 }
 

@@ -20,7 +20,6 @@
   font-size: var(--font-size-primary);
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
   letter-spacing: 3px;
   margin-top: 33px;
 }
@@ -52,7 +51,28 @@
 }
 
 @media (max-width: 480px) {
+  .hero__intro {
+    font-size: var(--font-size-sm);
+    margin-top: 0;
+  }
+
   .hero__name {
-    font-size: 36px;
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  .hero__title {
+    font-size: var(--font-size-secondary);
+    font-weight: 500;
+  }
+
+  .hero__blurb {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .hero__actions {
+    gap: 12px;
+    flex-direction: column;
   }
 }
