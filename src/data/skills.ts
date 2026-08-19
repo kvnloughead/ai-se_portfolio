@@ -12,7 +12,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "REST APIs", "MongoDB", "RAG"],
+    items: ["Node.js", "Express", "RAG", "REST APIs", "MongoDB"],
   },
   {
     category: "Tools",

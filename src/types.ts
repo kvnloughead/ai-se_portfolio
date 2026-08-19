@@ -5,7 +5,8 @@ export interface Profile {
   email: string;
   githubUrl: string;
   linkedinUrl: string;
-  location: string;
+  locationUrl: string;
+  locationText: string;
 }
 
 export interface SkillGroup {

@@ -11,9 +11,8 @@ export const projects: Project[] = [
     name: "TaskFlow",
     description: [
       "A drag-and-drop task board for small teams, with real-time updates " +
-        "and per-board permissions. Built with React, Express, and MongoDB.",
-      "Boards sync across clients over WebSockets, so moving a card is " +
-        "visible to teammates instantly without a page refresh.",
+        "and per-board permissions. ",
+      "Built with React, Express, and MongoDB.",
     ],
     image: taskflowImg,
     githubUrl: "https://github.com/jordanrivera/taskflow",

@@ -1,5 +1,4 @@
 import type { Project } from "../../types";
-import { GithubIcon, ExternalLinkIcon } from "../Icons/Icons";
 import "./ProjectCard.css";
 
 interface ProjectCardProps {
@@ -28,7 +27,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             rel="noreferrer"
             className="project-card__link"
           >
-            <GithubIcon /> Code
+            Code
           </a>
           <a
             href={project.liveUrl}
@@ -36,7 +35,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             rel="noreferrer"
             className="project-card__link"
           >
-            <ExternalLinkIcon /> Live
+            Live
           </a>
         </div>
       </div>
