@@ -4,16 +4,16 @@ import "./Hero.css";
 export function Hero() {
   return (
     <section id="about" className="hero section">
-      <div className="section-inner hero-inner">
-        <p className="section-eyebrow">Hi, I'm</p>
-        <h1 className="hero-name">{profile.name}</h1>
-        <p className="hero-title">{profile.title}</p>
-        <p className="hero-blurb">{profile.blurb}</p>
-        <div className="hero-actions">
-          <a className="button button-primary" href="#projects">
+      <div className="section__inner hero__inner">
+        <p className="section__intro">Hi, I'm</p>
+        <h1 className="hero__name">{profile.name}</h1>
+        <p className="hero__title">{profile.title}</p>
+        <p className="hero__blurb">{profile.blurb}</p>
+        <div className="hero__actions">
+          <a className="button button_primary" href="#projects">
             View my work
           </a>
-          <a className="button button-secondary" href="#contact">
+          <a className="button button_secondary" href="#contact">
             Get in touch
           </a>
         </div>

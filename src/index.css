@@ -99,13 +99,13 @@ pre {
   padding: 64px 24px;
 }
 
-.section-inner {
+.section__inner {
   max-width: var(--content-max-width);
   margin: 0 auto;
 }
 
-.section-eyebrow {
-  font-size: var(--font-size-caption);
+.section__intro {
+  font-size: var(--font-size-primary);
   font-weight: 600;
   color: var(--color-text-secondary);
   text-transform: uppercase;
@@ -113,7 +113,7 @@ pre {
   margin: 0 0 8px;
 }
 
-.section-title {
+.section__title {
   font-size: 32px;
   margin: 0 0 32px;
 }
@@ -139,21 +139,21 @@ pre {
   cursor: pointer;
 }
 
-.button-primary {
+.button_primary {
   background-color: var(--color-blue);
   color: #ffffff;
 }
 
-.button-primary:hover {
+.button_primary:hover {
   background-color: #1666bd;
 }
 
-.button-secondary {
+.button_secondary {
   background-color: transparent;
   color: var(--color-text-primary);
   border-color: var(--color-border);
 }
 
-.button-secondary:hover {
+.button_secondary:hover {
   background-color: var(--color-bg-secondary);
 }

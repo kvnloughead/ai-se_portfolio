@@ -5,9 +5,9 @@ import "./Projects.css";
 export function Projects() {
   return (
     <section id="projects" className="projects section">
-      <div className="section-inner">
-        <h2 className="section-title">Projects</h2>
-        <div className="projects-grid">
+      <div className="section__inner">
+        <h2 className="section__title">Projects</h2>
+        <div className="projects__grid">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

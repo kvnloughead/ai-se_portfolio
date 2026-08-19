@@ -2,18 +2,18 @@
   background-color: var(--color-bg-secondary);
 }
 
-.skills-grid {
+.skills__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 32px;
 }
 
-.skills-group-title {
+.skills__group-title {
   font-size: var(--font-size-secondary);
   margin: 0 0 16px;
 }
 
-.skills-list {
+.skills__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@
 }
 
 /* Tags are ~32px tall -> 8px radius per the border-radius scale */
-.skills-tag {
+.skills__tag {
   background-color: var(--color-bg-primary);
   border: 1px solid var(--color-border);
   border-radius: 8px;

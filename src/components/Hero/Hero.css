@@ -1,4 +1,12 @@
-.hero-inner {
+.hero {
+  background: linear-gradient(
+    180deg,
+    var(--color-bg-secondary) -72.42%,
+    var(--color-bg-primary) 100%
+  );
+}
+
+.hero__inner {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -7,25 +15,25 @@
   padding-bottom: 32px;
 }
 
-.hero-name {
+.hero__name {
   font-size: 48px;
   margin: 0 0 8px;
 }
 
-.hero-title {
+.hero__title {
   font-size: 20px;
   color: var(--color-blue);
   font-weight: 600;
   margin: 0 0 24px;
 }
 
-.hero-blurb {
+.hero__blurb {
   max-width: 620px;
   color: var(--color-text-secondary);
   margin: 0 0 32px;
 }
 
-.hero-actions {
+.hero__actions {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -33,7 +41,7 @@
 }
 
 @media (max-width: 480px) {
-  .hero-name {
+  .hero__name {
     font-size: 36px;
   }
 }

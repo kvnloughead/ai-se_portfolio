@@ -10,23 +10,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="project-card">
       <img
-        className="project-card-image"
+        className="project-card__image"
         src={project.image}
         alt={`Screenshot of ${project.name}`}
       />
-      <div className="project-card-body">
-        <h3 className="project-card-name">{project.name}</h3>
-        <div className="project-card-description">
+      <div className="project-card__body">
+        <h3 className="project-card__name">{project.name}</h3>
+        <div className="project-card__description">
           {project.description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
-        <div className="project-card-links">
+        <div className="project-card__links">
           <a
             href={project.githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="project-card-link"
+            className="project-card__link"
           >
             <GithubIcon /> Code
           </a>
@@ -34,7 +34,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.liveUrl}
             target="_blank"
             rel="noreferrer"
-            className="project-card-link"
+            className="project-card__link"
           >
             <ExternalLinkIcon /> Live
           </a>

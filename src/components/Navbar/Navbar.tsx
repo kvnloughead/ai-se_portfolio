@@ -14,16 +14,20 @@ export function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="navbar-inner">
-        <a className="navbar-brand" href="#about" onClick={() => setIsOpen(false)}>
+      <div className="navbar__inner">
+        <a
+          className="navbar__brand"
+          href="#about"
+          onClick={() => setIsOpen(false)}
+        >
           {profile.name}
         </a>
 
         <button
           type="button"
-          className="navbar-toggle"
+          className="navbar__toggle"
           aria-expanded={isOpen}
-          aria-controls="navbar-links"
+          aria-controls="navbar__links"
           aria-label="Toggle navigation menu"
           onClick={() => setIsOpen((open) => !open)}
         >
@@ -33,11 +37,15 @@ export function Navbar() {
         </button>
 
         <nav
-          id="navbar-links"
-          className={`navbar-links${isOpen ? " navbar-links-open" : ""}`}
+          id="navbar__links"
+          className={`navbar__links${isOpen ? " navbar__links_open" : ""}`}
         >
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setIsOpen(false)}>
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+            >
               {link.label}
             </a>
           ))}
