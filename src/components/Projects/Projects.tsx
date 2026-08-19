@@ -1,17 +1,33 @@
+import { useState } from "react";
 import { projects } from "../../data/projects";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./Projects.css";
 
 export function Projects() {
+  const [numberShown, setNumberShown] = useState(Math.min(projects.length, 3));
+
+  function showMore() {
+    setNumberShown(numberShown + 3);
+  }
+
   return (
     <section id="projects" className="projects section">
       <div className="section__inner">
         <h2 className="section__title">Projects</h2>
-        <div className="projects__grid">
-          {projects.map((project) => (
+        <ul className="projects__grid">
+          {projects.slice(0, numberShown).map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
-        </div>
+        </ul>
+        {projects.length > 3 && (
+          <button
+            className="button button_secondary projects__show-more"
+            type="button"
+            onClick={showMore}
+          >
+            Show more
+          </button>
+        )}
       </div>
     </section>
   );

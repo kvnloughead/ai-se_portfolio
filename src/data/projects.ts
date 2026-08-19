@@ -40,4 +40,12 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/jordanrivera/weathernow",
     liveUrl: "https://weathernow.example.com",
   },
+  {
+    id: "placeholder",
+    name: "Placeholder",
+    description: ["Placeholder project"],
+    image: weathernowImg,
+    githubUrl: "https://github.com/jordanrivera/placeholder",
+    liveUrl: "https://placeholder.example.com",
+  },
 ];

@@ -7,7 +7,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="project-card">
+    <li className="project-card">
       <img
         className="project-card__image"
         src={project.image}
@@ -39,6 +39,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </a>
         </div>
       </div>
-    </article>
+    </li>
   );
 }
