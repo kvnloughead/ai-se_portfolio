@@ -16,7 +16,7 @@ A single-page developer portfolio built with React, TypeScript, and Vite.
 
 All content lives in [src/data/](src/data/) — edit those files to
 replace the example profile, skills, and projects with your own. No
-component code needs to change for content updates.
+component code needs to change faor content updates.
 
 ## Tech stack
 
@@ -36,23 +36,23 @@ Prerequisites: Node.js 20+
 
 ## Customizing
 
-| To change... | Edit... |
-| --- | --- |
-| Name, title, blurb, contact links | [src/data/profile.ts](src/data/profile.ts) |
-| Skills | [src/data/skills.ts](src/data/skills.ts) |
-| Projects | [src/data/projects.ts](src/data/projects.ts) |
-| Project screenshots | [src/assets/projects/](src/assets/projects/) (placeholder SVGs — swap in real screenshots) |
-| Colors, fonts, spacing | CSS custom properties in [src/index.css](src/index.css) |
+| To change...                      | Edit...                                                                                    |
+| --------------------------------- | ------------------------------------------------------------------------------------------ |
+| Name, title, blurb, contact links | [src/data/profile.ts](src/data/profile.ts)                                                 |
+| Skills                            | [src/data/skills.ts](src/data/skills.ts)                                                   |
+| Projects                          | [src/data/projects.ts](src/data/projects.ts)                                               |
+| Project screenshots               | [src/assets/projects/](src/assets/projects/) (placeholder SVGs — swap in real screenshots) |
+| Colors, fonts, spacing            | CSS custom properties in [src/index.css](src/index.css)                                    |
 
 ## Scripts
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the dev server |
-| `npm run build` | Type-check and build for production |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint |
-| `npm run deploy` | Build and publish `dist/` to the `gh-pages` branch |
+| Command           | Description                                        |
+| ----------------- | -------------------------------------------------- |
+| `npm run dev`     | Start the dev server                               |
+| `npm run build`   | Type-check and build for production                |
+| `npm run preview` | Preview the production build locally               |
+| `npm run lint`    | Run ESLint                                         |
+| `npm run deploy`  | Build and publish `dist/` to the `gh-pages` branch |
 
 ## Deploying to GitHub Pages
 
