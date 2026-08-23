@@ -5,10 +5,7 @@ export const profile: Profile = {
   name: "Jordan Rivera",
   title: "Full-Stack Web Developer",
   blurb:
-    "I build fast, accessible web apps from database to UI. Recently I've been " +
-    "focused on the MERN stack, and I enjoy turning rough ideas into polished, " +
-    "working products. Looking for opportunities to join a team where I can keep " +
-    "learning and shipping.",
+    "I'm a full-stack web developer who builds fast, accessible applications using the MERN stack. I enjoy transforming ideas into polished, user-focused products and continuously expanding my technical skills. I'm excited to contribute to a collaborative team while building software that solves real-world problems.",
   email: "jordan.rivera@example.com",
   locationText: "San Francisco, CA (Open to Remote)",
   locationUrl:
