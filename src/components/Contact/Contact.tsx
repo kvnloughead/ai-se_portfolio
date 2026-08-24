@@ -25,7 +25,7 @@ export default function Contact() {
         </li>
         <li>
           <a
-            href="public/resume.pdf"
+            href={profile.resume}
             target="_blank"
             rel="noreferrer"
             download

@@ -17,12 +17,6 @@
   --color-hover-secondary: #c5e0fc;
   --color-blue: #3f96f3;
 
-  --color-orange: #d35722;
-  --color-green: #328f51;
-  --color-red: #de4c45;
-  --color-yellow: #f48e00;
-  --color-purple: #8754fd;
-
   /* Typography */
   --font-body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "Suisse Intl Mono", ui-monospace, "SF Mono", Menlo, monospace;

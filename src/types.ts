@@ -7,6 +7,7 @@ export interface Profile {
   linkedinUrl: string;
   locationUrl: string;
   locationText: string;
+  resume: string;
 }
 
 export interface SkillGroup {
@@ -17,7 +18,6 @@ export interface SkillGroup {
 export interface Project {
   id: string;
   name: string;
-  /** One paragraph per entry. */
   description: string[];
   image: string;
   githubUrl: string;

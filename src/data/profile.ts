@@ -12,4 +12,5 @@ export const profile: Profile = {
     "https://www.google.com/maps/place/San+Francisco,+CA/@37.7576928,-122.4787994,13z/data=!3m1!4b1!4m6!3m5!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155!16zL20vMGQ2bHA?entry=ttu&g_ep=EgoyMDI2MDgxNi4wIKXMDSoASAFQAw%3D%3D",
   githubUrl: "https://github.com/jordanrivera",
   linkedinUrl: "https://www.linkedin.com/in/jordanrivera",
+  resume: "public/resume.pdf",
 };

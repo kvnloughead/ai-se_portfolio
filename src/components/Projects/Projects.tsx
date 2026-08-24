@@ -19,7 +19,7 @@ export function Projects() {
             <ProjectCard key={project.id} project={project} />
           ))}
         </ul>
-        {projects.length > 3 && (
+        {projects.length > 3 && numberShown < projects.length && (
           <button
             className="button button_secondary projects__show-more"
             type="button"
